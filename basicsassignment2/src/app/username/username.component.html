@@ -1,0 +1,16 @@
+<p>
+  username works!
+</p>
+<input
+  type = "text"
+  name="usernameBox"
+  [(ngModel)]="username"
+>
+<p>{{username}}</p>
+<button 
+  name="resetBtn"
+  value="Reset"
+  type="button"
+  (click)="onResetUserNameClick()"
+  [disabled]="checkIfNull()"
+>Reset</button>
