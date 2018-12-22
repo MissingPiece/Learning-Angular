@@ -1,0 +1,7 @@
+<p>
+  display-button works!
+</p>
+<button (click)="onDisplayToggle()">Display Details</button>
+<br>
+<p *ngIf="showParagraph === true" >Secret Password = tuna</p>
+<p [ngStyle]="{backgroundColor: counter >=5 ? 'blue': 'transparent'}" [ngClass]="{'overfive': counter >= 5}" *ngFor="let counter of clickHistory; let i = index">Count is {{clickHistory[i]}}</p>
